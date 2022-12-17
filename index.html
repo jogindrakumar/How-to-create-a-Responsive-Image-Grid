@@ -6,9 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Image Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        
+        .column {
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        
+        @media screen and (max-width:800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Responsive image Grid</h1>
+        <p>Resize the browser window</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="img/1.jpg" alt="" style="width: 100%;">
+            <img src="img/2.jpg" alt="" style="width: 100%;">
+            <img src="img/3.jpg" alt="" style="width: 100%;">
+            <img src="img/4.jpg" alt="" style="width: 100%;">
+            <img src="img/5.jpg" alt="" style="width: 100%;">
+            <img src="img/6.jpg" alt="" style="width: 100%;">
+            <img src="img/7.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="img/8.jpg" alt="" style="width: 100%;">
+            <img src="img/9.jpg" alt="" style="width: 100%;">
+            <img src="img/10.jpg" alt="" style="width: 100%;">
+            <img src="img/11.jpg" alt="" style="width: 100%;">
+            <img src="img/12.jpg" alt="" style="width: 100%;">
+            <img src="img/13.jpg" alt="" style="width: 100%;">
+
+        </div>
+        <div class="column">
+            <img src="img/14.jpg" alt="" style="width: 100%;">
+            <img src="img/15.jpg" alt="" style="width: 100%;">
+            <img src="img/16.jpg" alt="" style="width: 100%;">
+            <img src="img/1.jpg" alt="" style="width: 100%;">
+            <img src="img/2.jpg" alt="" style="width: 100%;">
+            <img src="img/3.jpg" alt="" style="width: 100%;">
+            <img src="img/4.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="img/8.jpg" alt="" style="width: 100%;">
+            <img src="img/9.jpg" alt="" style="width: 100%;">
+            <img src="img/10.jpg" alt="" style="width: 100%;">
+            <img src="img/11.jpg" alt="" style="width: 100%;">
+            <img src="img/12.jpg" alt="" style="width: 100%;">
+            <img src="img/13.jpg" alt="" style="width: 100%;">
+
+        </div>
+    </div>
 
 </body>
 
